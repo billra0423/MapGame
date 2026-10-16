@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177caed532934ace8c3531bda9259b30, type: 3}
+  m_Name: Sealed Cache
+  m_EditorClassIdentifier: 
+  title: "잠긴 보급 상자"
+  narrative: "오래된 보급 상자를 발견했다. 힘으로 열어 보거나 그대로 떠날 수 있다. 맞는 열쇠가 있다면 가방에서 골라 사용할 수 있다."
+  repeatable: 0
+  choices:
+  - label: "힘으로 자물쇠를 부순다"
+    description: ""
+    useStatCheck: 1
+    checkStat: 0
+    minimumStat: 7
+    success:
+      narrative: "상자를 부수며 보급품 일부가 망가졌다. 붕대 1개 획득, 힘 1 증가."
+      healthChange: 0
+      maxHealthChange: 0
+      stats:
+      - stat: 0
+        amount: 1
+      rewards:
+      - item: {fileID: 11400000, guid: 46349c2e4eb147778fcba8208f802d7b, type: 2}
+        amount: 1
+    failure:
+      narrative: "손을 다쳤다. 체력 12를 잃었다."
+      healthChange: -12
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+  - label: "상자를 그대로 두고 떠난다"
+    description: ""
+    useStatCheck: 0
+    checkStat: 0
+    minimumStat: 5
+    success:
+      narrative: "상자를 두고 길을 이어갔다."
+      healthChange: 0
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+    failure:
+      narrative: "행동을 마쳤다."
+      healthChange: 0
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+  itemInteractions:
+  - item: {fileID: 11400000, guid: 5f03bd9abcf44f6d993d72f4c526b5fd, type: 2}
+    amount: 1
+    consume: 0
+    title: "열쇠로 열린 이중 바닥"
+    narrative: "열쇠로 상자를 열었다. 멀쩡한 보급품 아래에 숨겨진 칸이 있다. 안쪽에서 희미한 금속 소리가 들린다."
+    choices:
+    - label: "숨겨진 칸까지 열어 본다"
+      description: ""
+      useStatCheck: 1
+      checkStat: 1
+      minimumStat: 7
+      success:
+        narrative: "함정을 피하고 비상 물자를 찾았다! 붕대 5개와 약초 3개 획득."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards:
+        - item: {fileID: 11400000, guid: 46349c2e4eb147778fcba8208f802d7b, type: 2}
+          amount: 5
+        - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+          amount: 3
+      failure:
+        narrative: "숨겨진 칸의 함정이 작동했다! 체력 20을 잃고 보급품이 불탔다."
+        healthChange: -20
+        maxHealthChange: 0
+        stats: []
+        rewards: []
+    - label: "보이는 보급품만 챙긴다"
+      description: ""
+      useStatCheck: 0
+      checkStat: 0
+      minimumStat: 5
+      success:
+        narrative: "상자를 훼손하지 않아 붕대 3개를 얻었다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards:
+        - item: {fileID: 11400000, guid: 46349c2e4eb147778fcba8208f802d7b, type: 2}
+          amount: 3
+      failure:
+        narrative: "행동을 마쳤다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards: []

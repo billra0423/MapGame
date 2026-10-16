@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177caed532934ace8c3531bda9259b30, type: 3}
+  m_Name: Injured Traveler
+  m_EditorClassIdentifier: 
+  title: "다친 여행자"
+  narrative: "여행자가 상처를 움켜쥐고 도움을 청한다. 상태를 살피거나 안전한 길을 안내할 수 있다. 가방의 붕대나 약초로 직접 치료를 시도할 수도 있다."
+  repeatable: 0
+  choices:
+  - label: "말을 걸고 상처의 상태를 살핀다"
+    description: ""
+    useStatCheck: 1
+    checkStat: 2
+    minimumStat: 5
+    success:
+      narrative: "증상을 알아보고 안전한 처치법을 알려 주었다. 지능 1 증가."
+      healthChange: 0
+      maxHealthChange: 0
+      stats:
+      - stat: 2
+        amount: 1
+      rewards: []
+    failure:
+      narrative: "상처의 독기를 들이마셨다. 체력 4 감소."
+      healthChange: -4
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+  - label: "안전한 길을 알려주고 떠난다"
+    description: ""
+    useStatCheck: 0
+    checkStat: 0
+    minimumStat: 5
+    success:
+      narrative: "여행자는 고맙다며 고개를 끄덕였다."
+      healthChange: 0
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+    failure:
+      narrative: "행동을 마쳤다."
+      healthChange: 0
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+  itemInteractions:
+  - item: {fileID: 11400000, guid: 46349c2e4eb147778fcba8208f802d7b, type: 2}
+    amount: 1
+    consume: 1
+    title: "붕대 아래의 검은 흔적"
+    narrative: "붕대로 출혈을 막았지만 상처에 검은 흔적이 보인다. 위험한 처치를 더 할지, 여기에서 마칠지 결정해야 한다."
+    choices:
+    - label: "독의 원인까지 찾아 처치한다"
+      description: ""
+      useStatCheck: 1
+      checkStat: 2
+      minimumStat: 7
+      success:
+        narrative: "여행자를 완전히 치료했다! 최대 체력 5, 체력 10, 행운 1 증가. 약초 4개를 받았다."
+        healthChange: 10
+        maxHealthChange: 5
+        stats:
+        - stat: 3
+          amount: 1
+        rewards:
+        - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+          amount: 4
+      failure:
+        narrative: "독이 손에 번졌다! 체력 15를 잃었다."
+        healthChange: -15
+        maxHealthChange: 0
+        stats: []
+        rewards: []
+    - label: "출혈을 막은 것으로 치료를 마친다"
+      description: ""
+      useStatCheck: 0
+      checkStat: 0
+      minimumStat: 5
+      success:
+        narrative: "여행자가 약초 2개를 건넸다. 체력 5를 회복했다."
+        healthChange: 5
+        maxHealthChange: 0
+        stats: []
+        rewards:
+        - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+          amount: 2
+      failure:
+        narrative: "행동을 마쳤다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards: []
+  - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+    amount: 1
+    consume: 1
+    title: "약초를 이용한 해독"
+    narrative: "약초를 상처에 바르자 피부색이 변한다. 효과가 있을 수도, 부작용이 생길 수도 있다."
+    choices:
+    - label: "해독 효과를 믿고 끝까지 치료한다"
+      description: ""
+      useStatCheck: 1
+      checkStat: 3
+      minimumStat: 7
+      success:
+        narrative: "해독에 성공했다! 행운 2 증가, 붕대 4개 획득."
+        healthChange: 0
+        maxHealthChange: 0
+        stats:
+        - stat: 3
+          amount: 2
+        rewards:
+        - item: {fileID: 11400000, guid: 46349c2e4eb147778fcba8208f802d7b, type: 2}
+          amount: 4
+      failure:
+        narrative: "약초와 독이 반응했다! 체력 22를 잃었다."
+        healthChange: -22
+        maxHealthChange: 0
+        stats: []
+        rewards: []
+    - label: "소량만 쓰고 경과를 지켜본다"
+      description: ""
+      useStatCheck: 0
+      checkStat: 0
+      minimumStat: 5
+      success:
+        narrative: "열이 조금 내렸다. 보답으로 붕대 1개를 받았다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards:
+        - item: {fileID: 11400000, guid: 46349c2e4eb147778fcba8208f802d7b, type: 2}
+          amount: 1
+      failure:
+        narrative: "행동을 마쳤다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards: []

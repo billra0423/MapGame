@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177caed532934ace8c3531bda9259b30, type: 3}
+  m_Name: Quiet Clearing
+  m_EditorClassIdentifier: 
+  title: "숲속의 빈터"
+  narrative: "길가에 낯선 약초가 보인다. 약초를 조사하거나 그늘에서 쉴 수 있다. 가방의 아이템으로 주변에 반응을 일으킬 수도 있다."
+  repeatable: 0
+  choices:
+  - label: "약초를 조사한다"
+    description: ""
+    useStatCheck: 1
+    checkStat: 2
+    minimumStat: 5
+    success:
+      narrative: "치유 약초 2개를 채집했다."
+      healthChange: 0
+      maxHealthChange: 0
+      stats:
+      - stat: 2
+        amount: 1
+      rewards:
+      - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+        amount: 2
+    failure:
+      narrative: "독가시에 찔려 체력 8을 잃었다."
+      healthChange: -8
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+  - label: "그늘에서 쉰다"
+    description: ""
+    useStatCheck: 0
+    checkStat: 0
+    minimumStat: 5
+    success:
+      narrative: "잠시 쉬며 체력 10을 회복했다."
+      healthChange: 10
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+    failure:
+      narrative: "행동을 마쳤다."
+      healthChange: 0
+      maxHealthChange: 0
+      stats: []
+      rewards: []
+  itemInteractions:
+  - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+    amount: 1
+    consume: 1
+    title: "약초 향에 반응한 숲"
+    narrative: "치유 약초를 으깨자 덤불이 빛난다. 그러나 달콤한 향 사이로 독한 냄새도 섞여 나온다."
+    choices:
+    - label: "빛나는 덤불 속을 깊이 조사한다"
+      description: ""
+      useStatCheck: 1
+      checkStat: 2
+      minimumStat: 7
+      success:
+        narrative: "숨겨진 약초 군락을 찾았다! 약초 5개와 행운 1을 얻었다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats:
+        - stat: 3
+          amount: 1
+        rewards:
+        - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+          amount: 5
+      failure:
+        narrative: "독성 포자가 퍼졌다! 체력 18을 잃고 약초도 찾지 못했다."
+        healthChange: -18
+        maxHealthChange: 0
+        stats: []
+        rewards: []
+    - label: "향을 피해 가장자리만 살핀다"
+      description: ""
+      useStatCheck: 0
+      checkStat: 0
+      minimumStat: 5
+      success:
+        narrative: "위험을 피하며 약초 2개를 얻었다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards:
+        - item: {fileID: 11400000, guid: dc748e004de34ff0b70adeafc15ebaf6, type: 2}
+          amount: 2
+      failure:
+        narrative: "행동을 마쳤다."
+        healthChange: 0
+        maxHealthChange: 0
+        stats: []
+        rewards: []

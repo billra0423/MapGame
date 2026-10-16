@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e910fd42ee0a4edf8c363c9af15e9339, type: 3}
+  m_Name: Old Key
+  m_EditorClassIdentifier: 
+  displayName: "낡은 열쇠"
+  description: "잠긴 상자를 열 수 있는 도구. 사용해도 사라지지 않는다."
+  icon: {fileID: 0}

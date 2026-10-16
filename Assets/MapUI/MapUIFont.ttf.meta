@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9cf4b46d80e3419693208ce0a457ae31
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  includeFontData: 1
+  fontName: Arial
+  fontNames:
+  - Arial
+  characterSpacing: 0
+  characterPadding: 1
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
