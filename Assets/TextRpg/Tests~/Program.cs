@@ -214,6 +214,14 @@ static class Program
         Check("null item cannot open special interaction", () => {
             var x = Setup(); Enter(x.s, x.m); Assert(!x.s.TryUseItem(null, out _) && x.s.HasPendingChoice, "null item accepted");
         });
+        Check("herb rewards create and accumulate a bag stack", () => {
+            var x = Setup(); var herb = new RpgItem { displayName = "치유 약초" };
+            x.e.choices[0].success.rewards.Add(new ItemAmount { item = herb, amount = 2 });
+            Enter(x.s, x.m); Choose(x.s);
+            Assert(x.p.CountItem(herb) == 2 && x.p.Inventory.Count == 1, "first herb reward missing");
+            Enter(x.s, x.m, 1, 1); Choose(x.s);
+            Assert(x.p.CountItem(herb) == 4 && x.p.Inventory.Count == 1, "herbs did not stack");
+        });
         Console.WriteLine($"{passed} domain checks passed. Unity serialization/UI require Editor verification.");
     }
 }

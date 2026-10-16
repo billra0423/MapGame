@@ -7819,7 +7819,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -7915,7 +7917,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8011,7 +8015,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8107,7 +8113,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8203,7 +8211,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8299,7 +8309,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8395,7 +8407,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8491,7 +8505,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3bab9023b2164ef58289754be3598e83, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 12
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0

@@ -1,0 +1,15 @@
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\bin\Debug\net9.0\DomainChecks.exe
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\bin\Debug\net9.0\DomainChecks.deps.json
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\bin\Debug\net9.0\DomainChecks.runtimeconfig.json
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\bin\Debug\net9.0\DomainChecks.dll
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\bin\Debug\net9.0\DomainChecks.pdb
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.AssemblyInfoInputs.cache
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.AssemblyInfo.cs
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.csproj.CoreCompileInputs.cache
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.sourcelink.json
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.dll
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\refint\DomainChecks.dll
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.pdb
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\DomainChecks.genruntimeconfig.cache
+C:\Users\billr\mapGame\Assets\TextRpg\Tests~\obj\Debug\net9.0\ref\DomainChecks.dll
